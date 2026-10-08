@@ -1,0 +1,13 @@
+# dependencies
+node_modules/
+
+# logs
+*.log
+
+# local environment
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store

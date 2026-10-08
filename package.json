@@ -1,0 +1,33 @@
+{
+  "name": "pi-classifier-provider",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Pi package that registers TypeSafe System One classifier models from ~/.pi/agent/classifier-models.json",
+  "keywords": [
+    "pi-package"
+  ],
+  "license": "MIT",
+  "pi": {
+    "extensions": [
+      "./extensions/classifier-models.ts"
+    ]
+  },
+  "files": [
+    "extensions",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.1.0",
+    "@types/bun": "^1.3.14",
+    "typescript": "^5.9.3"
+  }
+}
